@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>SafeHaven Solutions</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="report.html">Report</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Report Form</h1>
+            <form action="/submit-report" method="POST">
+                <!-- Personal Information -->
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <!-- Date Input -->
+                <label for="date">Date of Report:</label>
+                <input type="date" id="date" name="date" required>
+
+                <!-- Numeric Input -->
+                <label for="amount">Amount ($):</label>
+                <input type="number" id="amount" name="amount" step="0.01" min="0" required>
+
+                <!-- Dropdown Selection -->
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="finance">Finance</option>
+                    <option value="hr">Human Resources</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="operations">Operations</option>
+                </select>
+
+                <!-- Checkbox Input -->
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <label>
+                        <input type="checkbox" name="contact-method" value="email"> Email
+                    </label>
+                    <label>
+                        <input type="checkbox" name="contact-method" value="phone"> Phone
+                    </label>
+                </fieldset>
+
+                <!-- Textarea Input -->
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional comments here..."></textarea>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Report">
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

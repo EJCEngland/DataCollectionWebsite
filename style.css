@@ -9,11 +9,11 @@ body {
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #A7ADC6;
 }
 
 a {
-    color: #4CAF50;
+    color: #5F4B66;
     text-decoration: none;
 }
 
@@ -23,11 +23,11 @@ a:hover {
 
 /* Header Styles */
 header {
-    background-color: #4CAF50;
+    background-color: #5F4B66;
     color: white;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 5px solid #333;
+    border-bottom: 5px solid #2C1320;
 }
 
 header h1 {
@@ -36,7 +36,7 @@ header h1 {
 
 /* Navigation Styles */
 nav {
-    background-color: #333;
+    background-color: #2C1320;
     overflow: hidden;
 }
 
@@ -50,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #4CAF50;
+    background-color:#5F4B66;
 }
 
 /* Main Content Styles */
@@ -101,7 +101,7 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background-color: #4CAF50;
+    background-color:#5F4B66;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -111,12 +111,12 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #5F4B66;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #2C1320;
     color: white;
     text-align: center;
     padding: 10px 0;
